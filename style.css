@@ -14,7 +14,6 @@ header {
 .navegacao {
 	position: relative;
 	width: auto;
-	margin: 0;
 	padding: 5 5px;
 }
 nav {
@@ -33,22 +32,17 @@ nav a {
 	font-weight: bold;
 	font-size: 18px;
 	text-decoration: none;
+	
 }
 nav a:hover {
-	color: #f90;
+	color: #000;
 }
 
-.vamosdeturma {
-	color: #FFFFFF;
-	font-size: 20px;
-	margin: 5px;
-}
 main {
 	margin: 0;
 	padding: 0;
 }
 
-/* css da página inicial */
 .banner {
 	width: 100%;
 	margin: none;
@@ -79,10 +73,6 @@ main {
 	font-weight: bold;
 }
 
-.trabalharitau {
-	padding: 1em 0;
-	background: #bbbb;
-}
 button{
 	width: 180px;
 	display: block;
@@ -96,12 +86,15 @@ button{
 	border-radius: 20px;
 	margin: 30px  auto;
 	cursor: pointer;
-	transition: transform 0.5s;
+	transition: 0.3s;
 }
 button:hover{
-	transform: translateY(-10px);
+	transform: scale3d(1.1, 1.1, 1);
 	color: #f90;	
-
+}
+.trabalharitau {
+	padding: 1em 0;
+	background: #bbbb;
 }
 .video {
 	width: 560px;
@@ -110,12 +103,71 @@ button:hover{
 
 .container{
 	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0,0 , 0.7)) ,  url(desconsoitau.jpg);
-	background-position: center;
-	background-size: cover ;
-	padding: 0;
-	box-sizing: border-box;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0,0 , 0.7)) ,  url(img/descansoitau.jpg);
+}
+.card {
+
+	width: 300px;
+	height: 460px;
+	margin: 50px;
+	background-color: #ffff;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0px 0px 10px rgba(0, 0,0 , 0.7);
+	transition: 0.3s;
+
+}
+.card:hover{
+	transform: scale3d(1.1, 1.1, 1);
+}
+/* Card Header*/
+.card-header{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.card-img{
+	min-width: 100%;
+	width: auto;
+	height: 100%;
+}
+.card-body{
+	height: 170px;
+	padding: 15px;
+	text-align: center;	
+}
+.card-resumo{
+	font-size: 14px;
+	margin: 10px 0;
+}
+
+.card-titulo{
+	font-size:26px ;
+	margin: 15px 0;
+}
+.card-texto{
+	font-size: 14px;
+	width: 250px;
+	margin: 0 auto;
+}
+.card-footer{
+	margin-top: 10px;
+	text-align: center;
+	background-color: #f90;
+}
+.card-footer a{
+
+	color: #fff;
+	display: block;
+	padding: 18px;
+	text-decoration: none;
+	font-weight: 600;
+}
+.card-footer a:hover {
+	color: #000;
 }
 footer {
 	text-align: center;
@@ -126,14 +178,8 @@ footer {
 	width: 50px;
 	padding: 10px;
 }
-
-@media screen and (max-width: 480px) {
-	.caixa, .principal, .video {
-		width: auto;
-	}
-	nav {
-		position: static;
-	}
-
-
+.vamosdeturma {
+	color: #FFFFFF;
+	font-size: 20px;
+	margin: 5px;
 }
