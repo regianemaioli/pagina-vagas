@@ -1,4 +1,4 @@
-# Site estático: Painel de Vagas
+# Site Estático: Painel de Vagas
   
 ## Objetivo: 
 O desafio foi desenvolver uma landing page utilizando apenas **HTML5** e **CSS3**.
